@@ -18,5 +18,5 @@ spec:
         ports:
         - containerPort: 8080
         command: ["/bin/bash", "-c"]
-        args: ["sleep 10s; cp -r /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps; sh /usr/local/tomcat/bin/startup.sh;tail -f /dev/null"]
+        args: ["sleep 10s;  cp -r /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps; cd /usr/local/tomcat/webapps; wget https://tomcat.apache.org/tomcat-9.0-doc/appdev/sample/sample.war;sh /usr/local/tomcat/bin/startup.sh;tail -f /dev/null"]
         
