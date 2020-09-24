@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tomcat-deployment
+spec:
+  selector:
+    matchLabels:
+      app: tomcat
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: tomcat
+    spec:
+      containers:
+      - name: tomcat
+        image: tomcat:latest
+        ports:
+        - containerPort: 8080
+        command: ["/bin/bash", "-c"]
+        args: ["sleep 10s; cp -r /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps; sh /usr/local/tomcat/bin/startup.sh;tail -f /dev/null"]
+        
