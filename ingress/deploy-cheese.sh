@@ -7,3 +7,5 @@ kubectl create deployment wensleydale --image=errm/cheese:wensleydale
 kubectl expose deployment cheddar --port=80
 kubectl expose deployment stilton --port=80
 kubectl expose deployment wensleydale --port=80
+
+
