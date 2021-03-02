@@ -3,7 +3,7 @@ Kubernetes as a service on Oracle Cloud Infrastructure. Also called **Container 
 
 This repo provides sample `yaml` files for getting started on OKE. There are four directories. each one is listed below.
 
-1. enabling Kubernetes Dashnoard [enable K8S dashboard](./dashboard/readme-dashboard.md)
+1. [enable K8S dashboard](./dashboard/readme-dashboard.md)
 2. deploy your first app on K8S
 3. deploy an ingress controller 
 4. create a Persistent Volume Claim (PVC)
