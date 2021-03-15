@@ -6,7 +6,8 @@ This repo provides sample `yaml` files for getting started on OKE. There are fou
 1. [enable K8S dashboard](./dashboard/readme-dashboard.md)
 2. deploy your first app on K8S
 3. deploy an ingress controller 
-4. create a Persistent Volume Claim (PVC)
+4. create a Persistent Volume using OCI Block Volume service (use storageclass: oci-bv)
+5. create a Persistent Volume using OCI File Storage service (includes creating storageclass: oci-fss)
 
 
 <br><br>
